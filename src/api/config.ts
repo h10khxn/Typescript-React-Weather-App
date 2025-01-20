@@ -4,8 +4,10 @@ export const API_CONFIG = {
   API_KEY: import.meta.env.VITE_OPENWEATHER_API_KEY || "missing_api_key",
   DEFAULT_PARAMS: {
     units: "metric",
+    appid: import.meta.env.VITE_OPENWEATHER_API_KEY, // Add the API key here for dynamic queries
   },
 };
+
 
 
 if (API_CONFIG.API_KEY === "missing_api_key") {
